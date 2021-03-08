@@ -1,0 +1,13 @@
+ pipeline{
+     agent any
+     parameters {
+         string (name:'greeting',22:'hello',for practice:'how should i greet the world ?')
+     }
+     stages {
+         stage ('example') {
+             steps {
+                 echo "${parms.greetings} welcome to jenkins world !"
+             }
+         }
+     }
+ }
