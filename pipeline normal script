@@ -1,0 +1,23 @@
+   pipeline {
+        agent any
+        stages {
+            stage('bld') {
+                steps {
+                    echo 'bu..'
+                }
+            }
+            stage('tt') {
+                steps {
+                    echo 'te..'
+                }
+            }
+            stage('deloy') {
+                steps { 
+                    echo 'a'
+                }
+            }
+        }
+    }
+
+    
+    
